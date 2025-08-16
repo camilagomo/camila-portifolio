@@ -202,13 +202,15 @@ function updateQuantity(productId, change) {
 
     item.quantity += change;
     
-    if (item.quantity <= 0) {
-        removeFromCart(productId);
-    } else {
+    // BUG 3: Allows negative quantities - validation removed
+    // This should prevent quantity from going below 1, but now allows 0 and negative values
+    // if (item.quantity <= 0) {
+    //     removeFromCart(productId);
+    // } else {
         renderCart();
         updateCartSummary();
         applyAutoPromotions();
-    }
+    // }
 }
 
 function removeFromCart(productId) {
@@ -334,10 +336,13 @@ function applyCoupon() {
     }
     
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    if (subtotal < coupon.minValue) {
-        showCouponStatus(`Valor mínimo para este cupom: R$ ${coupon.minValue.toFixed(2)}`, 'error');
-        return;
-    }
+    
+    // BUG 1: Minimum value validation commented out intentionally
+    // This allows coupons to be applied even when cart total is below minimum required
+    // if (subtotal < coupon.minValue) {
+    //     showCouponStatus(`Valor mínimo para este cupom: R$ ${coupon.minValue.toFixed(2)}`, 'error');
+    //     return;
+    // }
     
     appliedCoupon = coupon;
     showCouponStatus(`Cupom aplicado com sucesso! Desconto: ${coupon.discount}${coupon.type === 'percentage' ? '%' : 'R$'}`, 'success');
@@ -380,6 +385,8 @@ function getActivePromotion() {
     const now = new Date();
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     
+    // BUG 2: Always returns first eligible promotion instead of best one
+    // This should find the promotion with highest discount value, but returns first match
     return activePromotions.find(promo => {
         const startDate = new Date(promo.startDate);
         const endDate = new Date(promo.endDate);
@@ -388,6 +395,23 @@ function getActivePromotion() {
                now <= endDate && 
                subtotal >= promo.minCartValue;
     });
+    
+    // CORRECT LOGIC (commented out):
+    // let bestPromotion = null;
+    // let maxDiscount = 0;
+    // 
+    // activePromotions.forEach(promo => {
+    //     const startDate = new Date(promo.startDate);
+    //     const endDate = new Date(promo.endDate);
+    //     if (promo.active && now >= startDate && now <= endDate && subtotal >= promo.minCartValue) {
+    //         let discount = promo.type === 'percentage' ? subtotal * (promo.value / 100) : promo.value;
+    //         if (discount > maxDiscount) {
+    //             maxDiscount = discount;
+    //             bestPromotion = promo;
+    //         }
+    //     }
+    // });
+    // return bestPromotion;
 }
 
 function applyAutoPromotions() {
