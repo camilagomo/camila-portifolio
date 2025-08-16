@@ -74,10 +74,7 @@ This document defines the testing strategy for the **QACommerce** system using a
 ### **4.1 Responsibilities**
 | Role | Responsibility | Name |
 |------|----------------|------|
-| **Test Manager** | Overall test coordination and User Stories | Camila Monteiro |
-| **Test Designer** | Test case creation based on User Stories | Camila Monteiro |
-| **Test Executor** | Test execution and acceptance criteria validation | Camila Monteiro |
-| **Test Analyst** | Results analysis and user feedback | Camila Monteiro |
+| **QA Analyst** | Overall test coordination and User Stories | Camila Monteiro |
 
 ---
 
