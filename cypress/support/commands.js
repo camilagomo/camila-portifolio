@@ -21,7 +21,7 @@ Cypress.Commands.add('verifyActivePage', (pageName) => {
 
 // Products
 Cypress.Commands.add('addProductToCart', (productId) => {
-  cy.get(`[onclick*="${productId}"]`).click()
+  cy.get(`[onclick*="addToCartFromHome(${productId})"]`).click()
 })
 
 // Cart
