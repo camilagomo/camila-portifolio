@@ -31,7 +31,7 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 
 ---
 
-## 🎯 **About the Project**
+## **About the Project**
 
 **QACommerce** is an e-commerce web application developed specifically to demonstrate Quality Assurance competencies, including:
 
@@ -44,7 +44,7 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 
 ---
 
-## 🛠️ **Technologies Used**
+## **Technologies Used**
 
 ### **Frontend:**
 - **HTML5** - Semantic application structure
@@ -89,8 +89,30 @@ The project includes purposefully implemented bugs to demonstrate defect detecti
 
 The project includes automated GitHub Actions workflows:
 
-- **Continuous Integration:** Runs on every push and pull request
-- **Test Categories:** Smoke, Regression, and Bug validation tests
-- **Server Configuration:** Application runs on port 8080
+- **🚀 Continuous Integration:** Runs on every push and pull request
+- **🧪 Test Categories:** Smoke, Regression, and Bug validation tests
+- **📊 Artifacts:** Screenshots and videos uploaded on test failures
+- **🌐 Server Configuration:** Application runs on port 8080
+- **⚡ Parallel Execution:** Multiple test suites run simultaneously
 
+### **Workflow Triggers:**
+- Push to `main` or `develop` branches
+- Pull requests to `main` branch
+
+---
+
+## 🏆 **Julio de Lima's Mentorship 2.0**
+
+This project was developed as part of **Julio de Lima's Mentorship 2.0**, a program focused on:
+
+- **Test Modeling, Documentation and Execution**
+- **Defect management tools**
+- **Test automation with Cypress**
+- **Quality Assurance best practices**
+- **Preparation for the QA job market**
+
+---
+
+## 📅 **Delivery Date**  
+**August 2025**
 
