@@ -20,7 +20,7 @@ The complete documentation is available in the **[Wiki](https://github.com/camil
 
 - [Test Plan](https://github.com/camilagomo/camila-portifolio/wiki/Test%E2%80%90plan:-Shopping-Cart-&-Promotions-Requirements)
 - [Test Cases](https://github.com/camilagomo/camila-portifolio/wiki/Test-Cases)
-- Defects (coming soon)  
+- [Defects](https://github.com/camilagomo/camila-portifolio/wiki/Defects)  
 
 ---
 
