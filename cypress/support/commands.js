@@ -21,9 +21,7 @@ Cypress.Commands.add('verifyActivePage', (pageName) => {
 
 // Products
 Cypress.Commands.add('addProductToCart', (productId) => {
-  cy.get('.marketplace-product-card')
-    .contains(`[onclick*="${productId}"]`)
-    .click()
+  cy.get(`[onclick*="${productId}"]`).click()
 })
 
 // Cart
