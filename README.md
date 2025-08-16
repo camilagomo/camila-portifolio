@@ -6,7 +6,7 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 
 ---
 
-## 🎯 **About the Project**
+## **About the Project**
 
 **QACommerce** is an e-commerce web application developed specifically to demonstrate Quality Assurance competencies, including:
 
@@ -19,7 +19,7 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 
 ---
 
-## 🛠️ **Technologies Used**
+## **Technologies Used**
 
 ### **Frontend:**
 - **HTML5** - Semantic application structure
