@@ -23,7 +23,7 @@ This document defines the testing strategy for the **QACommerce** system using a
 
 ---
 
-## 🔄 **2. VERSION**
+## **2. VERSION**
 
 | Version | Date | Author | Description |
 |---------|------|--------|-------------|
@@ -32,7 +32,7 @@ This document defines the testing strategy for the **QACommerce** system using a
 
 ---
 
-## 🎯 **3. SCOPE**
+## **3. SCOPE**
 
 ### **3.1 User Stories in Scope**
 
@@ -99,7 +99,7 @@ This document defines the testing strategy for the **QACommerce** system using a
 
 ---
 
-## 📅 **6. ACTIVITIES AND ESTIMATES**
+## **6. ACTIVITIES AND ESTIMATES**
 
 ### **6.1 Test Schedule per User Story**
 
