@@ -1,46 +1,32 @@
-name: Cypress E2E Tests
+name: Cypress Tests
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  cypress-tests:
+  test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test-type: [smoke, regression, bugs]
     
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
       
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
       
-      - name: Run ${{ matrix.test-type }} tests
-        run: npm run test:${{ matrix.test-type }}
+      - run: npm run test:all
       
-      - name: Upload Cypress screenshots
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: cypress-screenshots-${{ matrix.test-type }}
-          path: cypress/screenshots
-          retention-days: 7
-      
-      - name: Upload Cypress videos
-        uses: actions/upload-artifact@v4
-        if: failure()
-        with:
-          name: cypress-videos-${{ matrix.test-type }}
-          path: cypress/videos
-          retention-days: 7
+          name: cypress-artifacts
+          path: |
+            cypress/screenshots
+            cypress/videos
