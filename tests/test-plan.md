@@ -96,13 +96,6 @@ This document defines the testing strategy for the **QACommerce** system using a
 - **Functionality**: System works according to User Story
 - **Usability**: Interface is intuitive for user
 - **Performance**: Fast response to user actions
-- **Robustness**: Adequate error handling and edge cases
-
-### **5.4 Validation Strategy**
-- **Acceptance Criteria**: Each User Story has clear criteria
-- **Test Scenarios**: Complete user flows
-- **Usability Metrics**: Completion time, error rate
-- **User Feedback**: Subjective experience evaluation
 
 ---
 
@@ -258,40 +251,28 @@ This document defines the testing strategy for the **QACommerce** system using a
 
 ---
 
-## 📝 **8. APPROVALS**
+## **8. APPROVALS**
 
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
-| **Test Manager** | Camila Monteiro | _________________ | 08/23/2024 |
-| **Test Designer** | Camila Monteiro | _________________ | _________________ |
+| **Tech Lead** | Adam | _________________ | 08/23/2025 |
+| **Product Owner** | Paula | _________________ | _________________ |
 
 ---
 
-## 📚 **9. REFERENCES**
+## **9. REFERENCES**
 
-- **ISO 29119-3**: Software and systems engineering - Software testing - Part 3: Test documentation
+- **ISO 29119-3**: Software and systems engineering 
 - **User Stories**: Agile methodology for requirements definition
 - **Acceptance Criteria**: Validation criteria for each User Story
 - **Behavior-Driven Development**: Approach for behavior-based testing
 
 ---
 
-## 📋 **10. APPENDICES**
+## **10. APPENDICES**
 
 ### **A. Glossary of Terms**
 - **User Story**: Description of functionality from user perspective
 - **Acceptance Criteria**: Conditions that must be met to accept a User Story
 - **US-XX**: User Story identifiers
 - **BDD**: Behavior-Driven Development
-
-### **B. Revision History**
-- **v2.0**: User Stories and ISO 29119-3 implementation
-- **v2.1**: Final adjustments and reviews
----
-
-## 🎯 **Executive Summary**
-
-This Test Plan establishes an innovative approach combining **User Stories** with the **ISO 29119-3** standard, ensuring that tests are focused on end users and validation of clear acceptance criteria. The plan covers 15 User Stories with 59 test cases, providing complete coverage of QACommerce functionalities through real usage scenarios.
-
-**Status: ✅ APPROVED**  
-**Next step: Execute tests based on User Stories**
