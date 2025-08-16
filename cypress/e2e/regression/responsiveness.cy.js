@@ -18,9 +18,9 @@ describe('Responsiveness Tests', () => {
     cy.viewport(1280, 720)
     
     // Verify main elements are visible
-    cy.get('.products-marketplace-grid').should('be.visible')
+      cy.get('.products-marketplace-grid').should('be.visible')
     cy.get('.marketplace-product-card').should('have.length', 6)
-    cy.get('.nav-menu').should('be.visible')
+      cy.get('.nav-menu').should('be.visible')
   })
 
   it('should work on tablet screens', () => {
@@ -28,12 +28,12 @@ describe('Responsiveness Tests', () => {
     cy.viewport(768, 1024)
     
     // Verify layout adapts to tablet
-    cy.get('.products-marketplace-grid').should('be.visible')
+      cy.get('.products-marketplace-grid').should('be.visible')
     cy.get('.marketplace-product-card').should('have.length', 6)
     
     // Test navigation works
     cy.get('[data-page="promotions"]').click()
-    cy.verifyActivePage('promotions')
+      cy.verifyActivePage('promotions')
   })
 
   it('should work on mobile screens', () => {
@@ -41,9 +41,9 @@ describe('Responsiveness Tests', () => {
     cy.viewport(375, 667)
     
     // Verify mobile layout
-    cy.get('.products-marketplace-grid').should('be.visible')
-    cy.get('.marketplace-product-card').should('have.length', 6)
-    cy.get('.nav-menu').should('be.visible')
+        cy.get('.products-marketplace-grid').should('be.visible')
+        cy.get('.marketplace-product-card').should('have.length', 6)
+        cy.get('.nav-menu').should('be.visible')
     
     // Test navigation works on mobile
     cy.get('[data-page="cart"]').click()
@@ -51,16 +51,16 @@ describe('Responsiveness Tests', () => {
   })
 
   it('should maintain functionality across all devices', () => {
-    const devices = [
-      { width: 1280, height: 720, name: 'Desktop' },
-      { width: 768, height: 1024, name: 'Tablet' },
-      { width: 375, height: 667, name: 'Mobile' }
-    ]
+      const devices = [
+        { width: 1280, height: 720, name: 'Desktop' },
+        { width: 768, height: 1024, name: 'Tablet' },
+        { width: 375, height: 667, name: 'Mobile' }
+      ]
 
-    devices.forEach(device => {
+      devices.forEach(device => {
       // Set viewport for each device
-      cy.viewport(device.width, device.height)
-      
+        cy.viewport(device.width, device.height)
+        
       // Test basic functionality: add product and go to cart
       cy.get('.marketplace-product-card').first().within(() => {
         cy.get('button').should('be.visible').click()
@@ -80,7 +80,7 @@ describe('Responsiveness Tests', () => {
     
     // Add product and go to cart
     cy.addProductToCart(1)
-    cy.navigateToPage('cart')
+        cy.navigateToPage('cart')
     
     // Verify buttons are large enough for touch
     cy.get('.quantity-btn').should('be.visible')
