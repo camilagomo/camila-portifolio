@@ -23,25 +23,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Start application server
-        run: |
-          npm run serve &
-          sleep 5
-        env:
-          CI: true
-      
-      - name: Wait for server to be ready
-        run: |
-          npx wait-on http://localhost:8080 --timeout 30000
-      
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
           headless: true
           spec: cypress/e2e/**/*.cy.js
-        env:
-          CYPRESS_baseUrl: http://localhost:8080
       
       - name: Upload Cypress screenshots
         uses: actions/upload-artifact@v4
@@ -78,18 +65,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Start application server
-        run: |
-          npm run serve &
-          sleep 5
-        env:
-          CI: true
-      
-      - name: Wait for server to be ready
-        run: |
-          npx wait-on http://localhost:8080 --timeout 30000
-      
       - name: Run ${{ matrix.test-type }} tests
         run: npm run test:${{ matrix.test-type }}
-        env:
-          CYPRESS_baseUrl: http://localhost:8080
