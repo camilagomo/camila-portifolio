@@ -60,18 +60,6 @@ The project includes purposefully implemented bugs to demonstrate defect detecti
 
 ---
 
-## 🏆 **Julio de Lima's Mentorship 2.0**
-
-This project was developed as part of **Julio de Lima's Mentorship 2.0**, a program focused on:
-
-- **Test Modeling, Documentation and Execution**
-- **Defect management tools**
-- **Test automation with Cypress**
-- **Quality Assurance best practices**
-- **Preparation for the QA job market**
-
----
-
 ## 📅 **Delivery Date**  
 **August 2025**
 
