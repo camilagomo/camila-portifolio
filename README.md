@@ -36,39 +36,11 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 
 ---
 
-## 📋 **Implemented Features**
-
-### **🛒 Shopping Cart:**
-- Add, remove and update products
-- Automatic calculation of totals and subtotals
-- Quantity validation
-- Empty state with guidance messages
-
-### **🎫 Coupon System:**
-- Apply and remove coupons
-- Minimum value validation
-- Different discount types (percentage/fixed)
-- Visual status feedback
-
-### **🎯 Automatic Promotions:**
-- Automatic application based on rules
-- Multiple discount types
-- Combination with coupons
-- Admin panel for creation
-
-### **📱 Responsive Interface:**
-- Adaptive layout for different screens
-- Mobile-optimized navigation
-- Touch-friendly buttons
-- Responsive product grid
-
----
-
-## 🐛 **Intentional Bugs (For Demonstration)**
+## **Intentional Bugs (For Demonstration)**
 
 The project includes purposefully implemented bugs to demonstrate defect detection and documentation skills:
 
-### **🔗 GitHub Issues:**
+### **GitHub Issues:**
 - **[DEFECT #001: Coupon Validation Bypass](https://github.com/camilagomo/camila-portifolio/issues/3)**  
   *Coupons are accepted even below the required minimum value*
 
@@ -77,74 +49,14 @@ The project includes purposefully implemented bugs to demonstrate defect detecti
 
 ---
 
-## 📚 **QA Documentation**
-
-### **Test Plans and Cases:**
-- **📋 Test Plan** - `tests/test-plan.md` (Based on ISO 29119-3)
-- **🧪 Test Cases** - `tests/test-cases.md` (10 critical cases for automation)
-- **📊 Requirements** - `tests/requirements.md` (Detailed requirements analysis)
-
-### **Cypress Automation:**
-- **🔥 Smoke Tests** - Critical functionalities
-- **🔄 Regression Tests** - Comprehensive coverage including responsiveness
-- **🐛 Bug Validation** - Automatic detection of intentional defects
-- **📱 Responsive Tests** - Validation across multiple viewports
+## **QA Documentation**
+- [Test Plan](https://github.com/camilagomo/camila-portifolio/wiki/Test%E2%80%90plan:-Shopping-Cart-&-Promotions-Requirements)
+- [Test Cases](https://github.com/camilagomo/camila-portifolio/wiki/Test-Cases)
 
 ---
 
-## 🚀 **How to Run the Project**
-
-### **1. Install Dependencies:**
-```bash
-npm install
-```
-
-### **2. Start Application:**
-```bash
-npm run serve
-# Application available at http://localhost:3000
-```
-
-### **3. Run Automated Tests:**
-```bash
-# All tests
-npm run test:all
-
-# Specific tests
-npm run test:smoke        # Critical functionalities
-npm run test:regression   # Complete coverage
-npm run test:responsive   # Responsiveness
-npm run test:bugs         # Defect validation
-```
-
-### **4. Interactive Mode (Cypress):**
-```bash
-npm run cypress:open
-```
-
----
-
-## 🎓 **Demonstrated Competencies**
-
-### **Quality Assurance:**
-- ✅ Requirements gathering and analysis
-- ✅ Test planning (ISO 29119-3)
-- ✅ Test case design
-- ✅ Defect detection and documentation
-- ✅ Traceability between requirements and tests
-
-### **Test Automation:**
-- ✅ Cypress Framework (E2E Testing)
-- ✅ Page Object Model
-- ✅ Custom commands
-- ✅ Responsiveness testing
-- ✅ CI/CD with GitHub Actions
-
-### **Web Development:**
-- ✅ Semantic HTML5
-- ✅ Responsive CSS3
-- ✅ Modern JavaScript ES6+
-- ✅ Debugging and troubleshooting
+## **Cypress**
+- [How to use](C:\Users\camilamonteiro\Documents\camila-portifolio\cypress\README.md)
 
 ---
 
@@ -160,17 +72,6 @@ This project was developed as part of **Julio de Lima's Mentorship 2.0**, a prog
 
 ---
 
-## 📊 **Project Metrics**
-
-- **📁 Structure:** 15+ organized files
-- **🧪 Tests:** 25+ automated test cases  
-- **🐛 Defects:** 2 documented bugs with evidence
-- **📱 Responsiveness:** 3 tested breakpoints
-- **⚡ CI/CD:** Automated pipeline on GitHub Actions
-- **📋 Coverage:** Smoke, Regression, Bug Validation and Responsive
-
----
-
 ## 📅 **Delivery Date**  
-**August 2024**
+**August 2025**
 
