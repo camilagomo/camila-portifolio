@@ -15,7 +15,8 @@
     "test:all": "cypress run --spec 'cypress/e2e/**/*.cy.js'",
     "test:headed": "cypress run --headed",
     "test:record": "cypress run --record --key your-record-key",
-    "report:generate": "cypress run && npx mochawesome-merge cypress/reports/*.json > cypress/reports/report.json && npx marge cypress/reports/report.json --reportDir cypress/reports --inline",
+    "test:report": "npm run test:all && npm run report:merge",
+    "report:merge": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json && npx marge cypress/reports/merged-report.json --reportDir cypress/reports --inline --reportTitle 'QACommerce Test Results' --reportPageTitle 'Cypress Test Report'",
     "serve": "http-server . -p 8080 -c-1"
   },
   "devDependencies": {

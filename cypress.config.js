@@ -12,6 +12,16 @@ module.exports = defineConfig({
     video: false,
     screenshotOnRunFailure: true,
     
+    // Reporter configuration for HTML reports
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/reports',
+      overwrite: false,
+      html: true,
+      json: true,
+      timestamp: 'mmddyyyy_HHMMss'
+    },
+    
     setupNodeEvents(on, config) {
       // Task for logging
       on('task', {
