@@ -40,9 +40,9 @@ describe('Shopping Cart Tests', () => {
     cy.addProductToCart(1)
     cy.navigateToPage('cart')
     
-    // Click increase quantity button
+    // Click increase quantity button (plus button)
     cy.get('.cart-item').first().within(() => {
-      cy.get('.quantity-btn').contains('+').click()
+      cy.get('.quantity-btn').last().click() // Last button is the + button
     })
     
     // Verify quantity increased to 2
@@ -74,6 +74,6 @@ describe('Shopping Cart Tests', () => {
     cy.get('.cart-item').should('have.length', 2)
     
     // Verify total is being calculated
-    cy.get('.total-amount').should('be.visible')
+    cy.get('#final-total').should('be.visible')
   })
 })
