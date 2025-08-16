@@ -6,6 +6,8 @@
  * • Change product quantities  
  * • Remove products from cart
  * • Calculate purchase total
+ * 
+ * Updated selectors for CI compatibility
  */
 
 describe('Shopping Cart Tests', () => {
