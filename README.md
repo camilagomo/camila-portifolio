@@ -4,6 +4,19 @@ This repository is part of an **academic portfolio** developed during **Julio de
 
 The project simulates a complete e-commerce with shopping cart, coupons and promotions, being used to practice requirements gathering, test planning, test case execution, defect tracking and test automation.
 
+## **About the Project**
+
+**QACommerce** is an e-commerce web application developed specifically to demonstrate Quality Assurance competencies, including:
+
+- ✅ **Functional application** with complete shopping cart
+- ✅ **Coupon system** and automatic promotions  
+- ✅ **Responsive interface** for desktop, tablet and mobile
+- ✅ **Admin panel** for promotions management
+- ✅ **Intentional bugs** to demonstrate detection skills
+- ✅ **Complete automation** with Cypress
+
+---
+
 ## 📸 **Application Screenshots**
 
 ### 🏠 **Home Page**
@@ -28,19 +41,6 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 *Click to watch the full application demonstration*
 
 > 🔗 **Video Link:** [QACommerce Demo on Loom](https://www.loom.com/share/659354bf544e48b9a5ad612884d7b52b?sid=e6d244e5-6786-41a1-b976-3589a2182ff0)
-
----
-
-## **About the Project**
-
-**QACommerce** is an e-commerce web application developed specifically to demonstrate Quality Assurance competencies, including:
-
-- ✅ **Functional application** with complete shopping cart
-- ✅ **Coupon system** and automatic promotions  
-- ✅ **Responsive interface** for desktop, tablet and mobile
-- ✅ **Admin panel** for promotions management
-- ✅ **Intentional bugs** to demonstrate detection skills
-- ✅ **Complete automation** with Cypress
 
 ---
 
@@ -82,37 +82,3 @@ The project includes purposefully implemented bugs to demonstrate defect detecti
 
 ## **Cypress**
 - [How to use](cypress/README.md)
-
----
-
-## 🔄 **CI/CD Pipeline**
-
-The project includes automated GitHub Actions workflows:
-
-- **🚀 Continuous Integration:** Runs on every push and pull request
-- **🧪 Test Categories:** Smoke, Regression, and Bug validation tests
-- **📊 Artifacts:** Screenshots and videos uploaded on test failures
-- **🌐 Server Configuration:** Application runs on port 8080
-- **⚡ Parallel Execution:** Multiple test suites run simultaneously
-
-### **Workflow Triggers:**
-- Push to `main` or `develop` branches
-- Pull requests to `main` branch
-
----
-
-## 🏆 **Julio de Lima's Mentorship 2.0**
-
-This project was developed as part of **Julio de Lima's Mentorship 2.0**, a program focused on:
-
-- **Test Modeling, Documentation and Execution**
-- **Defect management tools**
-- **Test automation with Cypress**
-- **Quality Assurance best practices**
-- **Preparation for the QA job market**
-
----
-
-## 📅 **Delivery Date**  
-**August 2025**
-
