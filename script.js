@@ -275,7 +275,17 @@ function renderCart() {
 }
 
 function updateCartSummary() {
-    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    // BUG 2: Incorrect calculation when cart has multiple items
+    // This should sum all items correctly, but uses wrong logic for multiple items
+    let subtotal = 0;
+    if (cart.length === 1) {
+        // Works correctly for single item
+        subtotal = cart[0].price * cart[0].quantity;
+    } else {
+        // BUG: Only calculates first item price for multiple items
+        subtotal = cart.reduce((sum, item) => sum + cart[0].price * item.quantity, 0);
+    }
+    
     let couponDiscount = 0;
     let promoDiscount = 0;
     
