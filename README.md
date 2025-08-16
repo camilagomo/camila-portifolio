@@ -18,7 +18,7 @@ The project simulates an e-commerce shopping cart with **coupons and promotions*
 
 The complete documentation is available in the **[Wiki](https://github.com/camilagomo/camila-portifolio/wiki)**:  
 
-- [Shopping Cart & Promotions Requirements](https://github.com/camilagomo/camila-portifolio/wiki/Shopping-Cart-&-Promotions-Requirements)  
+- [Shopping Cart & Promotions Requirements]([https://github.com/camilagomo/camila-portifolio/wiki/Shopping-Cart-&-Promotions-Requirements](https://github.com/camilagomo/camila-portifolio/wiki/Test%E2%80%90plan:-Shopping-Cart-&-Promotions-Requirements))  
 - Test Plan (coming soon)  
 - Test Cases (coming soon)  
 - Defects (coming soon)  
