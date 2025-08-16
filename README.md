@@ -40,11 +40,9 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 [![QACommerce Demo](docs/images/video-thumbnail.png)](https://www.loom.com/share/659354bf544e48b9a5ad612884d7b52b?sid=e6d244e5-6786-41a1-b976-3589a2182ff0)
 *Click to watch the full application demonstration*
 
-> 🔗 **Video Link:** [QACommerce Demo on Loom](https://www.loom.com/share/659354bf544e48b9a5ad612884d7b52b?sid=e6d244e5-6786-41a1-b976-3589a2182ff0)
-
 ---
 
-## **Technologies Used**
+### **Technologies Used**
 
 ### **Frontend:**
 - **HTML5** - Semantic application structure
@@ -61,8 +59,6 @@ The project simulates a complete e-commerce with shopping cart, coupons and prom
 
 ---
 
-## **Intentional Bugs (For Demonstration)**
-
 The project includes purposefully implemented bugs to demonstrate defect detection and documentation skills:
 
 ### **GitHub Issues:**
@@ -74,11 +70,11 @@ The project includes purposefully implemented bugs to demonstrate defect detecti
 
 ---
 
-## **QA Documentation**
+### **QA Documentation**
 - [Test Plan](https://github.com/camilagomo/camila-portifolio/wiki/Test%E2%80%90plan:-Shopping-Cart-&-Promotions-Requirements)
 - [Test Cases](https://github.com/camilagomo/camila-portifolio/wiki/Test-Cases)
 
 ---
 
-## **Cypress**
+### **Cypress**
 - [How to use](cypress/README.md)
