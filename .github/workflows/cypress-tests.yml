@@ -1,0 +1,95 @@
+name: Cypress E2E Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Start application server
+        run: |
+          npm run serve &
+          sleep 5
+        env:
+          CI: true
+      
+      - name: Wait for server to be ready
+        run: |
+          npx wait-on http://localhost:8080 --timeout 30000
+      
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          headless: true
+          spec: cypress/e2e/**/*.cy.js
+        env:
+          CYPRESS_baseUrl: http://localhost:8080
+      
+      - name: Upload Cypress screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          retention-days: 7
+      
+      - name: Upload Cypress videos
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-videos  
+          path: cypress/videos
+          retention-days: 7
+
+  test-categories:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test-type: [smoke, regression, bugs]
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Start application server
+        run: |
+          npm run serve &
+          sleep 5
+        env:
+          CI: true
+      
+      - name: Wait for server to be ready
+        run: |
+          npx wait-on http://localhost:8080 --timeout 30000
+      
+      - name: Run ${{ matrix.test-type }} tests
+        run: npm run test:${{ matrix.test-type }}
+        env:
+          CYPRESS_baseUrl: http://localhost:8080

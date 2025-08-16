@@ -1,0 +1,9 @@
+# Placeholder for admin-panel.png
+# This file should be replaced with the actual screenshot showing:
+# - "Painel Administrativo" header
+# - "Criar Nova Promoção" form with fields:
+#   - Nome da Promoção, Descrição
+#   - Tipo de Desconto, Valor do Desconto
+#   - Valor Mínimo do Carrinho, Data de Início/Fim
+# - "Criar Promoção" button
+# - "Gerenciar Promoções" section with existing promotions

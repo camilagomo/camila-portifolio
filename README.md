@@ -4,6 +4,31 @@ This repository is part of an **academic portfolio** developed during **Julio de
 
 The project simulates a complete e-commerce with shopping cart, coupons and promotions, being used to practice requirements gathering, test planning, test case execution, defect tracking and test automation.
 
+## 📸 **Application Screenshots**
+
+### 🏠 **Home Page**
+![QACommerce Home Page](docs/images/home-page.png)
+*Main marketplace with product grid and navigation*
+
+### 🛒 **Shopping Cart**  
+![Shopping Cart](docs/images/shopping-cart.png)
+*Cart management with coupon system and total calculation*
+
+### 🎯 **Promotions & Coupons**
+![Promotions Page](docs/images/promotions-page.png)
+*Active promotions and available discount coupons*
+
+### ⚙️ **Admin Panel**
+![Admin Panel](docs/images/admin-panel.png)
+*Administrative interface for promotions management*
+
+## 🎥 **Demo Video**
+
+[![QACommerce Demo](docs/images/video-thumbnail.png)](https://www.loom.com/share/659354bf544e48b9a5ad612884d7b52b?sid=e6d244e5-6786-41a1-b976-3589a2182ff0)
+*Click to watch the full application demonstration*
+
+> 🔗 **Video Link:** [QACommerce Demo on Loom](https://www.loom.com/share/659354bf544e48b9a5ad612884d7b52b?sid=e6d244e5-6786-41a1-b976-3589a2182ff0)
+
 ---
 
 ## 🎯 **About the Project**
@@ -56,22 +81,16 @@ The project includes purposefully implemented bugs to demonstrate defect detecti
 ---
 
 ## **Cypress**
-- [How to use](C:\Users\camilamonteiro\Documents\camila-portifolio\cypress\README.md)
+- [How to use](cypress/README.md)
 
 ---
 
-## 🏆 **Julio de Lima's Mentorship 2.0**
+## 🔄 **CI/CD Pipeline**
 
-This project was developed as part of **Julio de Lima's Mentorship 2.0**, a program focused on:
+The project includes automated GitHub Actions workflows:
 
-- **Test Modeling, Documentation and Execution**
-- **Defect management tools**
-- **Test automation with Cypress**
-- **Quality Assurance best practices**
-- **Preparation for the QA job market**
+- **Continuous Integration:** Runs on every push and pull request
+- **Test Categories:** Smoke, Regression, and Bug validation tests
+- **Server Configuration:** Application runs on port 8080
 
----
-
-## 📅 **Delivery Date**  
-**August 2025**
 

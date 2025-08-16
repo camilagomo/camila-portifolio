@@ -5,10 +5,10 @@
 npm install
 ```
 
-### **2. Start Application:**
+### **2. Application Setup:**
 ```bash
-npm run serve
-# Application available at http://localhost:3000
+# No server needed! Tests run directly on index.html file
+# Application opens automatically with file:// protocol
 ```
 
 ### **3. Run Automated Tests:**
@@ -28,39 +28,9 @@ npm run test:bugs         # Defect validation
 npm run cypress:open
 ```
 
----
-
-## 🎓 **Demonstrated Competencies**
-
-### **Quality Assurance:**
-- ✅ Requirements gathering and analysis
-- ✅ Test planning (ISO 29119-3)
-- ✅ Test case design
-- ✅ Defect detection and documentation
-- ✅ Traceability between requirements and tests
-
-### **Test Automation:**
-- ✅ Cypress Framework (E2E Testing)
-- ✅ Page Object Model
-- ✅ Custom commands
-- ✅ Responsiveness testing
-- ✅ CI/CD with GitHub Actions
-
-### **Web Development:**
-- ✅ Semantic HTML5
-- ✅ Responsive CSS3
-- ✅ Modern JavaScript ES6+
-- ✅ Debugging and troubleshooting
-
----
 
 
 
-## 📊 **Project Metrics**
 
-- **📁 Structure:** 15+ organized files
-- **🧪 Tests:** 25+ automated test cases  
-- **🐛 Defects:** 2 documented bugs with evidence
-- **📱 Responsiveness:** 3 tested breakpoints
-- **⚡ CI/CD:** Automated pipeline on GitHub Actions
-- **📋 Coverage:** Smoke, Regression, Bug Validation and Responsive
+
+
