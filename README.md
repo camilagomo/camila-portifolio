@@ -1,21 +1,42 @@
-# 🚀 Full-Cycle QA Project  
+# Portfolio Project
 
-From AI-generated requirements to automated functional and performance testing, this portfolio demonstrates hands-on expertise in **test strategy, execution, defect management, and automation**. Designed to simulate real-world scenarios, it highlights my ability to ensure **software quality, reliability, and efficiency** from start to finish.  
+This repository is part of an **academic and portfolio exercise** focused on **Software Quality**.  
+The project simulates an e-commerce shopping cart with **coupons and promotions**, and is used to practice requirements, testing, defect tracking, and automation.
+
+---
+
+## 📌 Project Scope
+- Shopping cart (add, update, remove items).  
+- Cart totalizer with discounts.  
+- Coupons and automatic promotions.  
+- Responsive web interface.  
+- Admin option to create promotions.  
 
 ---
 
-## 📌 Introduction  
+## 📚 Documentation
 
-This project showcases a complete **Quality Assurance lifecycle**, from requirements gathering to automation, using an AI-generated application as the foundation. The goal is to demonstrate practical skills in both manual and automated testing, following industry best practices.  
+The complete documentation is available in the **[Wiki](https://github.com/camilagomo/camila-portifolio/wiki)**:  
 
-### Scope  
-
-- **Requirements** – leveraging generative AI to create software requirements and build the application.  
-- **Test Plan** – developing a comprehensive test strategy and planning to ensure product quality.  
-- **Test Cases** – executing tests, identifying and reporting defects.  
-- **Automation** – implementing functional and performance test automation.  
+- [Shopping Cart & Promotions Requirements](https://github.com/camilagomo/camila-portifolio/wiki/Shopping-Cart-&-Promotions-Requirements)  
+- Test Plan (coming soon)  
+- Test Cases (coming soon)  
+- Defects (coming soon)  
+- Automation (coming soon)  
 
 ---
+
+## 🚀 About this project
+This project was built to practice:  
+- Requirements gathering with Generative AI.  
+- Building a **Test Plan**.  
+- Designing and executing **Test Cases**.  
+- Reporting **Defects**.  
+- Applying **Test Automation** (functional and performance).  
+- Documenting with **best practices** using GitHub Wiki.  
+
+---
+
 
 ## 📅 Delivery Date  
 **23 August 2025**
