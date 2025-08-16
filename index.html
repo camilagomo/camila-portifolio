@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QACommerce - Marketplace de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1><i class="fas fa-store"></i> QACommerce</h1>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="promotions">Promoções</a></li>
+                    <li><a href="#" class="nav-link" data-page="cart">Carrinho</a></li>
+                    <li><a href="#" class="nav-link" data-page="admin">Admin</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Página Home - Marketplace -->
+        <section id="home-page" class="page active">
+            <div class="container">
+                <div class="home-header">
+                    <h2><i class="fas fa-home"></i> Bem-vindo ao QACommerce</h2>
+                    <p>Descubra produtos incríveis com as melhores ofertas e promoções!</p>
+                </div>
+                
+                <div class="marketplace-section">
+                    <h3><i class="fas fa-shopping-bag"></i> Produtos Disponíveis</h3>
+                    <div class="products-marketplace-grid">
+                        <!-- Produtos serão carregados aqui -->
+                    </div>
+                </div>
+                
+                <div class="home-actions">
+                    <div class="action-card">
+                        <i class="fas fa-tags"></i>
+                        <h4>Ver Promoções</h4>
+                        <p>Confira nossos cupons e descontos especiais</p>
+                        <button class="btn btn-primary" onclick="navigateToPage('promotions')">
+                            Ver Promoções
+                        </button>
+                    </div>
+                    
+                    <div class="action-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h4>Meu Carrinho</h4>
+                        <p>Gerencie seus produtos e finalize sua compra</p>
+                        <button class="btn btn-success" onclick="navigateToPage('cart')">
+                            Ver Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página do Carrinho -->
+        <section id="cart-page" class="page">
+            <div class="container">
+                <div class="cart-header">
+                    <h2><i class="fas fa-shopping-bag"></i> Seu Carrinho</h2>
+                    <div class="cart-summary">
+                        <span class="cart-count">0 itens</span>
+                        <span class="cart-total">Total: R$ 0,00</span>
+                    </div>
+                </div>
+
+                <!-- Cupom de Desconto -->
+                <div class="coupon-section">
+                    <div class="coupon-input">
+                        <input type="text" id="coupon-code" placeholder="Digite o código do cupom">
+                        <button id="apply-coupon" class="btn btn-primary">Aplicar Cupom</button>
+                    </div>
+                    <div id="coupon-status" class="coupon-status"></div>
+                    <div class="coupon-actions">
+                        <button class="btn btn-secondary" onclick="showPage('promotions')">
+                            <i class="fas fa-tags"></i> Ver Promoções e Cupons
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lista de Produtos no Carrinho -->
+                <div id="cart-items" class="cart-items">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Seu carrinho está vazio</p>
+                        <p>Adicione produtos para começar suas compras!</p>
+                    </div>
+                </div>
+
+                <!-- Resumo do Carrinho -->
+                <div id="cart-summary" class="cart-summary-details" style="display: none;">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">R$ 0,00</span>
+                    </div>
+                    <div class="summary-row" id="coupon-discount-row" style="display: none;">
+                        <span>Desconto Cupom:</span>
+                        <span id="coupon-discount">-R$ 0,00</span>
+                    </div>
+                    <div class="summary-row" id="promo-discount-row" style="display: none;">
+                        <span>Desconto Promoção:</span>
+                        <span id="promo-discount">-R$ 0,00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="final-total">R$ 0,00</span>
+                    </div>
+                    <button id="checkout-btn" class="btn btn-success btn-large">
+                        <i class="fas fa-credit-card"></i> Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página de Promoções -->
+        <section id="promotions-page" class="page">
+            <div class="container">
+                <h2><i class="fas fa-tags"></i> Promoções Ativas</h2>
+                <div id="promotions-list" class="promotions-grid">
+                    <!-- Promoções serão carregadas aqui -->
+                </div>
+                
+                <h2 style="margin-top: 3rem;"><i class="fas fa-ticket-alt"></i> Cupons Disponíveis</h2>
+                <div id="coupons-list" class="coupons-grid">
+                    <!-- Cupons serão carregados aqui -->
+                </div>
+                
+                <div class="next-step-message">
+                    <div class="message-content">
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="message-text">
+                            <h3>🎯 Pronto para economizar?</h3>
+                            <p>Escolha seu cupom favorito e avance para o carrinho de compras!</p>
+                        </div>
+                        <button class="btn btn-primary" onclick="showPage('cart')">
+                            <i class="fas fa-shopping-cart"></i> Ir para o Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Admin -->
+        <section id="admin-page" class="page">
+            <div class="container">
+                <h2><i class="fas fa-cog"></i> Painel Administrativo</h2>
+                
+                <div class="admin-section">
+                    <h3>Criar Nova Promoção</h3>
+                    <form id="promotion-form" class="admin-form">
+                        <div class="form-group">
+                            <label for="promo-name">Nome da Promoção:</label>
+                            <input type="text" id="promo-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="promo-description">Descrição:</label>
+                            <textarea id="promo-description" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="promo-type">Tipo de Desconto:</label>
+                                <select id="promo-type" required>
+                                    <option value="percentage">Porcentagem (%)</option>
+                                    <option value="fixed">Valor Fixo (R$)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="promo-value">Valor do Desconto:</label>
+                                <input type="number" id="promo-value" min="0" step="0.01" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="promo-min-value">Valor Mínimo do Carrinho (R$):</label>
+                                <input type="number" id="promo-min-value" min="0" step="0.01" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="promo-start-date">Data de Início:</label>
+                                <input type="date" id="promo-start-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="promo-end-date">Data de Fim:</label>
+                            <input type="date" id="promo-end-date" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Criar Promoção</button>
+                    </form>
+                </div>
+                
+                <div class="admin-section">
+                    <h3>Gerenciar Promoções</h3>
+                    <div id="admin-promotions-list" class="admin-promotions">
+                        <!-- Lista de promoções para admin -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Produtos -->
+    <div id="products-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Adicionar Produtos</h3>
+            <div id="products-list" class="products-grid">
+                <!-- Produtos serão carregados aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
