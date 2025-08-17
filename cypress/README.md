@@ -2,7 +2,7 @@
 
 > **HTML Reports Available** | **Mochawesome Integration** | **CI/CD Ready**
 
-## 🚀 **How to Run the Project**
+## **How to Run the Project**
 
 ### **1. Install Dependencies:**
 ```bash
@@ -52,7 +52,7 @@ npm run test:report
 cypress/reports/merged-report.html
 ```
 
-### **☁️ CI/CD Integration:**
+### **CI/CD Integration:**
 Reports are automatically generated in **GitHub Actions** and available as **downloadable artifacts**:
 
 1. Go to: [GitHub Actions](https://github.com/camilagomo/camila-portifolio/actions)
