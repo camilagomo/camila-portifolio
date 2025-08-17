@@ -1,4 +1,4 @@
-# QACommerce - Academic Portfolio
+# QACommerce - Portfolio
 
 This repository is part of an **academic portfolio** developed during **Julio de Lima's Mentorship 2.0**, focused on **Software Quality Assurance (QA)**.  
 
